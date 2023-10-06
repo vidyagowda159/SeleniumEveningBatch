@@ -17,6 +17,14 @@ types of xpath
 
 	//tagname[contains(text(), partial_text)]
 
+# dependent independent xpath
+- locate dynamically changing elements
+- handle web tables
+
+name    marks
+john    45
+steve   20
+
 
 
 """
@@ -31,10 +39,31 @@ driver = webdriver.Chrome(options=opts)
 driver.get("https://demowebshop.tricentis.com/")
 driver.maximize_window()
 
-driver.find_element("xpath", '//input[@value="Search store"]').send_keys("Mobiles")
-time.sleep(2)
+# driver.find_element("xpath", '//input[@value="Search store"]').send_keys("Mobiles")
+# time.sleep(2)
+#
+# driver.find_element("xpath", '//input[@type="submit"]').click()
+# time.sleep(2)
+#
+# driver.find_element("xpath", '//a[text()="Register"]').click()
 
-driver.find_element("xpath", '//input[@type="submit"]').click()
-time.sleep(2)
+###########################################################################
 
-driver.find_element("xpath", '//a[text()="Register"]').click()
+# driver.find_element("xpath", '(//a[contains(text(), "Books")])[1]').click()
+
+# -------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
