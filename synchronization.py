@@ -33,6 +33,7 @@ locator = ("name", "fname")
 
 element = wait_.until(ec.visibility_of_element_located(locator), message="Element not visible")
 element.send_keys("steve")
+
 # driver.find_element("name", "fname").send_keys("Steve")
 
 # element = driver.find_element("name", "fname")
