@@ -1,0 +1,34 @@
+pip install pytest
+
+pytest - unit testing framework
+
+naming conventions
+------------------
+1. filename - test_*.py or *_test.py
+2. classname - TestClassName
+3. methods/functions - test_func()
+
+markers
+-------
+1. inbuilt markers - skip, skipif, parameterize, dependency, xfail
+2. custom markers - grouping the testcases
+
+reports
+-------
+pip install pytest-html
+command: pytest filename.py -vs --html="path/report_name.html"
+
+
+assert condition, [message]
+------
+* if condition is True --> continues the execution
+* if condition is False --> raises Assertion Error
+
+
+
+commands
+--------
+1. pytest filename.py -vs
+    v(verbosity) - detail explanation about the testcase
+    s(scripting) - to print all the print statements
+
